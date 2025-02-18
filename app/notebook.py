@@ -21,7 +21,8 @@ class Note:
         else:
             return "La etiqueta ya existe"
 
-
+    def __str__(self,) -> str:
+        return f"Date: {self.creation_date} - Title: {self.title} \n {self.text}"
 
 
 
