@@ -14,6 +14,13 @@ class Note:
         self.creation_date = datetime.now()
         self.tags: list[str] = []
 
+    def add_tag(self, tag: str):
+        if self.tags.count(tag) < 1:
+            self.tags.append(tag)
+
+        else:
+            return "La etiqueta ya existe"
+
 
 
 
