@@ -25,6 +25,15 @@ class Note:
         return f"Date: {self.creation_date} - Title: {self.title} \n {self.text}"
 
 
+class Notebook:
+
+    notes: list[Note] = []
+
+    def add_note(self, title: str, text: str, important: str) -> int:
+
+
+
+
 
 
 
