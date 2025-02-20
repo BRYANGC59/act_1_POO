@@ -1,4 +1,5 @@
 from datetime import datetime
+from random import randint
 
 class Note:
 
@@ -28,8 +29,15 @@ class Note:
 class Notebook:
 
     notes: list[Note] = []
+    contador = 0
 
     def add_note(self, title: str, text: str, important: str) -> int:
+       if len(self.notes) == 0:
+           self.contador += 1
+           self.notes.append(self.contador)
+
+
+
 
 
 
