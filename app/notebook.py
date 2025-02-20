@@ -28,13 +28,11 @@ class Note:
 
 class Notebook:
 
-    notes: list[Note] = []
-    contador = 0
+    def __int__(self):
+        self.notes: list[Note] = []
 
-    def add_note(self, title: str, text: str, important: str) -> int:
-       if len(self.notes) == 0:
-           self.contador += 1
-           self.notes.append(self.contador)
+    def add_note(self, title: str, text: str, important: str):
+       code: int = len(self.notes) + 1
 
 
 
